@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Ramaraja-Regular";
+  src: url("/fonts/Ramaraja-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/fonts/Roboto-Regular.ttf");
+  font-display: swap;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  font-family: "Roboto-Regular";
+  padding: 45px 80px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navigation-items {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.navigation-container-reg {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  list-style: none;
+  padding: 66px;
+}
+
+.navigation-link {
+  margin-right: 38px;
+}
+
+.navigation-reg-link {
+  margin-left: 40px;
+}
+
+
+
+
+
+
+

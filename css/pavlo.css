@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Ramaraja";
+  src: url("/fonts/Ramaraja-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Regular.ttf");
+  font-display: swap;
+}
+
+
+.header {
+ display: flex;
+}
+
+.main-header {
+  justify-content: space-between;
+}
+
+.logo-and-nav {
+display: flex;
+align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-link-reg {
+  text-decoration: none;
+}
+
+.nav-link-reg {
+
+}
