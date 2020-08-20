@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ramaraja";
+  src: url("../fonts/Ramaraja-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+}
+
+.header-container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.navigation-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation-item {
+  margin-left: 38px;
+}
+
+.navigation-items-register {
+  display: flex;
+  justify-self: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-item-register {
+  margin-left: 71.3px;
+}
+
+.navigatin-link {
+  text-decoration: none;
+  color: black;
+}
+
+.navigation-item-register:last-child {
+  background: #FC569A;
+  border-radius: 6px;
+  padding: 18px 31px ;
+}
