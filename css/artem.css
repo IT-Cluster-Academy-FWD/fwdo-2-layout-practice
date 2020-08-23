@@ -15,6 +15,13 @@
   src: url("/fonts/Roboto-Regular.ttf");
 }
 
+:root {
+  --main-color: black;
+  --secondary-color:blue;
+  --btn-color: #FC569A;
+  --third-color: #33a2e0;
+}
+
 .btn {
   padding: 18px 31px;
   border-radius: 6px;
@@ -29,14 +36,20 @@
   border: 0;
   outline: 0;
   background: transparent;
+  transition: border-color 300ms ease-out, background-color 0.3s ease-in;
 }
 
 .btn-pink {
   background: #FC569A;
+  border: 1px solid var(--btn-color);
   color: #fff;
   }
 
-  
+  .btn-pink:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    border-color: var(--secondary-color-color);
+  }
 
 /* Header */
 .header {
@@ -59,7 +72,6 @@
 /* Section */
 .banner {
   min-height: 526px;
-  background: url(/img/frame_4.png) bottom right no-repeat;
   margin-top: 115px;
   margin-left: 120px;
 }
@@ -121,3 +133,28 @@
   font-family: Roboto;
   color: #1B0A42;
 }
+
+
+.banner-picture {
+  height: auto;
+  width: 100%;
+  position: relative;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.banner-picture:hover {
+  animation-name: fly;
+}
+
+@keyframes fly {
+  25% {
+    bottom: 50px;
+    transform: scale(1);
+  }
