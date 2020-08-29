@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 @font-face {
   font-family: "Ramaraja";
     src: url("/fonts/Ramaraja-Regular.ttf");
@@ -9,9 +15,146 @@
   src: url("/fonts/Roboto-Regular.ttf");
 }
 
+:root {
+  --main-color: black;
+  --secondary-color:blue;
+  --btn-color: #FC569A;
+  --third-color: #33a2e0;
+}
+
+.btn {
+  padding: 18px 31px;
+  border-radius: 6px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #1B0A42;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  transition: border-color 300ms ease-out, background-color 0.3s ease-in;
+}
+
+.btn-pink {
+  background: #FC569A;
+  border: 1px solid var(--btn-color);
+  color: #fff;
+  }
+
+  .btn-pink:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    border-color: var(--secondary-color-color);
+  }
+
+/* Header */
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
 }
 
+.nav-items .btn {
+  margin-left: 9px;
+}
+
+.main-wrapper { 
+  width: 1600px;
+  margin: auto;
+  padding: 30px 35px 0 80px;
+}
+
+/* Section */
+.banner {
+  min-height: 526px;
+  margin-top: 115px;
+  margin-left: 120px;
+}
+
+.banner h1 {
+  width: 497px;
+  font-family: Ramaraja;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 76px;
+  letter-spacing: 0.02em;
+  color: #1B0A42;
+  padding-top: 66px;
+}
+
+.banner p {
+  width: 579px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: #9A9A9A;
+}
+
+.banner .btn {
+  width: 152px;
+  margin-top: 50px;
+}
+
+.link-logo {
+  width: 95.2px;
+  display: inline-block;
+}
+
+.navigation ul{
+  list-style: none;
+  margin-left: 97.5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.navigation ul li {
+  display: inline;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation a {
+  margin-right: 38px;
+  text-decoration:none ;
+  font-family: Roboto;
+  color: #1B0A42;
+}
 
 
+.banner-picture {
+  height: auto;
+  width: 100%;
+  position: relative;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.banner-picture:hover {
+  animation-name: fly;
+}
+
+@keyframes fly {
+  25% {
+    bottom: 50px;
+    transform: scale(1);
+  }
